@@ -1,0 +1,66 @@
+package oop;
+
+public class BankAccount {
+	//Static belongs to the class not the object instance
+	//final >> constant (often you see final and static togehter)
+	String accountNumber;
+	private static final String routingNumber = "102345";
+	
+	//Instance Variable
+	String name;
+	String ssn;
+	String accountType;	
+	double balance = 0;
+			
+	// Constructor definitions: unique methods
+		//1. They are used to define/setup/initialize properties of an object
+		//2. Constructors are IMPLICITYLY called upon instantiation
+		//3. The same name as the class itself
+		//4. Constructors have NO return type
+	
+	BankAccount() {
+		System.out.println("New Account Created");
+	}
+	BankAccount(String accountType) {
+		System.out.println("NEW ACCOUNT: " + accountType);
+		
+	}
+	
+	BankAccount(String accountType, double initDeposit) {
+		System.out.println("NEW ACCOUNT: " + accountType);
+		System.out.println("INITIAL DEPOSIT OF: $" + initDeposit);
+		
+	}
+
+	//define methods
+	public void deposit(double amount) {
+		balance = balance + amount;
+		showActivity("Depsit");
+
+}
+	void withdraw(double amount) {
+		balance = balance + amount; 
+		showActivity("Withdraw");
+	}	
+	//Private: can only be called within the class	
+	private void showActivity(String activity) {
+		System.out.println("Your recent transaction: " + activity);
+		System.out.println("Your new balance is: " + balance);
+		
+	}
+	
+	void checkBalance() {
+		
+	}
+	void getStatus () {
+		
+	}
+	
+	@Override 
+	public String toString() {
+		return "[ Name: " + name + ". Account Number: " + accountNumber + " . Routing Number" + routingNumber + " Balance: $" + balance +" ]"; 
+	}
+	
+}
+
+	

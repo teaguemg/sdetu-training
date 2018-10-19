@@ -1,0 +1,31 @@
+package oop;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+		// Creating a new bank account >> think instantiate an object
+
+		BankAccount acc1 = new BankAccount();
+		acc1.name = "Rodger Hue";
+		acc1.accountNumber = "0641233";
+		acc1.balance = 10000;
+		System.out.println(acc1.toString());
+		
+
+		BankAccount acc2 = new BankAccount("Checking Account");
+		acc2.accountNumber = "0641266";
+		
+		BankAccount acc3 = new BankAccount("Savings Account", 5000);
+		acc3.accountNumber = "0641242";
+		acc3.checkBalance();
+		
+		
+		//demo for inheritance 
+		CDAccount cd1 = new CDAccount();
+		cd1.balance = 3000;
+		cd1.name = "Juan";
+		System.out.println(cd1.toString()); 
+		
+	}
+
+}

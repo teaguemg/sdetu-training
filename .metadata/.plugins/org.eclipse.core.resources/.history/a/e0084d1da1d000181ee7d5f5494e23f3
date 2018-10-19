@@ -1,0 +1,31 @@
+package basics;
+
+public class NumbersCalc {
+	public static void main(String[] args) {
+		System.out.println("Program is starting");
+		printName();//function
+		
+		int numA = 10;//Variable
+		int numB = 20; //Variable
+		addNumbers(numA, numB); //Function
+	}
+	
+	
+	//setting up functions, the functions listed in Main will tell the fucntion the action to take. 
+	static void printName() {
+		//This just call teh function listed in the Main block
+		System.out.println("My name is Mack");
+	}
+
+	static void addNumbers (int numA, int numB) {
+		//This function will add two numbers
+		int sum = numA + numB; 
+		System.out.println("The sum of numbers "  + numA + " and "  + numB + " is "  + sum);
+	}
+	
+/*	
+	multipleNumbers
+/*
+ * 
+ */
+}

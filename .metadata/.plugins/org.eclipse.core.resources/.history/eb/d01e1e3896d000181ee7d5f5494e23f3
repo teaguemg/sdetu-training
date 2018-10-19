@@ -1,0 +1,16 @@
+package basics;
+
+public class Days {
+	public static void main(String[] args) {
+		//Execute different bloc of code based on the value of a condition
+		//Switch Block
+		
+		String dayOfWeek = "Tuesday"; 
+		
+		switch (dayOfWeek) {
+		case "Monday" : System.out.println("Today is Monday");
+		case "Tuesday" : System.out.println("Today is Tuesday");
+		}
+		
+	}
+}

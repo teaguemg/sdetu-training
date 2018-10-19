@@ -1,0 +1,10 @@
+package oop;
+
+public interface IRate {
+	
+	//Wrote a class outline
+	public void setRate();
+	public void increaseRate();
+	
+
+}
